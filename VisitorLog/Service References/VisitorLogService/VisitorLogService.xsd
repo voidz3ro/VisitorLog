@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VisitorLogService" />
+  <xs:element name="RecordAction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="naction" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ncompany" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ncountry" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ncity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nsublocation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="prescreened" type="xs:boolean" />
+        <xs:element minOccurs="0" name="entity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datetime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecordActionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RecordActionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLogAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLogAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/VisitorLogService" minOccurs="0" name="GetLogAllResult" nillable="true" type="q1:ArrayOfVisitLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

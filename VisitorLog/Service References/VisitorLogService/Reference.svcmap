@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eedd2470-bb8d-41e4-9a7d-ea4d052133b4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VisitorLogService.disco" MetadataType="Disco" ID="5816d2de-f059-4752-88fa-be4c86f55a8c" SourceId="1" SourceUrl="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc?disco" />
+    <MetadataFile FileName="VisitorLogService.wsdl" MetadataType="Wsdl" ID="ae861e36-c189-4611-8e78-bec922375be1" SourceId="1" SourceUrl="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc?wsdl" />
+    <MetadataFile FileName="VisitorLogService.xsd" MetadataType="Schema" ID="755f4339-0d50-4c00-8a22-ceb80cb358f1" SourceId="1" SourceUrl="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VisitorLogService2.xsd" MetadataType="Schema" ID="8d279f41-e288-4d55-8422-31212186dcba" SourceId="1" SourceUrl="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VisitorLogService1.xsd" MetadataType="Schema" ID="15efb2ea-9bc3-412e-aacf-87abc60553a8" SourceId="1" SourceUrl="http://visitorlogservice.azurewebsites.net/VisitorLogService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

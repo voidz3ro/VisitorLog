@@ -1,0 +1,51 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="VisitorLog.VisitorFindVisit"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VisitorLog"
+    xmlns:common="using:VisitorLog.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">Scheduled visits</x:String>
+    </Page.Resources>
+
+    <Page.TopAppBar>
+        <CommandBar>
+
+            <AppBarButton Label="Sign in" Icon="Next" Click="AppBarButton_Click_2"/>
+
+
+        </CommandBar>
+    </Page.TopAppBar>
+
+    <Grid Background="#70000000">
+        <!-- Back button and page title -->
+        <Grid Margin="0,0,0,668">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="pageTitle" Text="Find appointment" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+    			IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,35,0,25"/>
+            <Button x:Name="backButton" Margin="35,35,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+            	Style="{StaticResource NavigationBackButtonNormalStyle}"
+            	VerticalAlignment="Top"
+            	AutomationProperties.Name="Back"
+            	AutomationProperties.AutomationId="BackButton"
+            	AutomationProperties.ItemType="Navigation Button" />
+        </Grid>
+        <Grid  Margin="0,105,0,0" Height="610" VerticalAlignment="Top">
+            <ListView x:Name="lvItems" Margin="50,135,50,10" SelectionChanged="lvItems_SelectionChanged"/>
+            <TextBlock HorizontalAlignment="Left" Margin="654,53,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="#FFA0A0A0"/>
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="50,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Global User Interface" FontSize="24" Width="285" PlaceholderText="Name" KeyUp="txtName_KeyUp"/>
+            <TextBox x:Name="txtName_Copy" HorizontalAlignment="Left" Margin="366,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Global User Interface" FontSize="24" Width="222" PlaceholderText="Company" KeyUp="txtName_Copy_KeyUp"/>
+            <TextBlock HorizontalAlignment="Left" Margin="50,28,0,0" TextWrapping="Wrap" Text="Please type your Name or Company to find your appointment." VerticalAlignment="Top" FontSize="24"/>
+        </Grid>
+
+    </Grid>
+</Page>

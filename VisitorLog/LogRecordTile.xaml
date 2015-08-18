@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Class="VisitorLog.LogRecordTile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VisitorLog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="40"
+    d:DesignWidth="1100">
+
+    <Grid>
+        <TextBlock x:FieldModifier="public" x:Name="txtName" HorizontalAlignment="Left" Margin="7,10,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontSize="20" Width="207"/>
+        <TextBlock x:FieldModifier="public" x:Name="txtDate" HorizontalAlignment="Left" Margin="219,10,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" FontSize="20" Width="213"/>
+        <TextBlock x:FieldModifier="public" x:Name="txtCompany" HorizontalAlignment="Left" Margin="432,10,0,0" TextWrapping="Wrap" Text="Company" VerticalAlignment="Top" FontSize="20" Width="267"/>
+        <TextBlock x:FieldModifier="public" x:Name="txtHost" HorizontalAlignment="Left" Margin="704,10,0,0" TextWrapping="Wrap" Text="Host" VerticalAlignment="Top" FontSize="20" Width="154"/>
+        <TextBlock x:FieldModifier="public" x:Name="txtAction" HorizontalAlignment="Left" Margin="907,10,0,0" TextWrapping="Wrap" Text="ActionType" VerticalAlignment="Top" FontSize="20" Width="154"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="11318voidzero.VisitorLog" Publisher="CN=5439425E-8949-4D85-A7DD-05F65074B822" Version="1.1.0.4" />
+  <Properties>
+    <DisplayName>Visitor Log</DisplayName>
+    <PublisherDisplayName>voidzero</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="VisitorLog.App">
+      <m2:VisualElements DisplayName="Visitor Log" Square150x150Logo="Assets\150.png" Square30x30Logo="Assets\Logo30.png" Description="Visitor Log is a simple visitor sign-in, sign out solution for Windows 8 devices." ForegroundText="dark" BackgroundColor="#ffffff">
+        <m2:DefaultTile ShortName="Visitor Log" DefaultSize="square150x150Logo" Square70x70Logo="Assets/70.png" Wide310x150Logo="Assets\LogoWide.png" Square310x310Logo="Assets\Logo310.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+            <m2:ShowOn Tile="square310x310Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#ffffff" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="portrait" />
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="portraitFlipped" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
+      </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name=".xml">
+            <DisplayName>.xml</DisplayName>
+            <SupportedFileTypes>
+              <FileType ContentType="text/xml">.xml</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="removableStorage" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+  </Capabilities>
+</Package>

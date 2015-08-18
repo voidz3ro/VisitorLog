@@ -1,0 +1,4 @@
+MainPackage=C:\Users\voidz3ro\Documents\Visual Studio 2013\Projects\VisitorLog\VisitorLog\bin\Debug\VisitorLog_1.1.0.4_Bundle\VisitorLog_1.1.0.4_AnyCPU_Debug.appx
+SymbolPackage=C:\Users\voidz3ro\Documents\Visual Studio 2013\Projects\VisitorLog\VisitorLog\AppPackages\VisitorLog_1.1.0.4_Debug_Test\VisitorLog_1.1.0.4_AnyCPU_Debug.appxsym
+ResourcePack=C:\Users\voidz3ro\Documents\Visual Studio 2013\Projects\VisitorLog\VisitorLog\bin\Debug\VisitorLog_1.1.0.4_Bundle\VisitorLog_1.1.0.4_scale-140.appx
+ResourcePack=C:\Users\voidz3ro\Documents\Visual Studio 2013\Projects\VisitorLog\VisitorLog\bin\Debug\VisitorLog_1.1.0.4_Bundle\VisitorLog_1.1.0.4_scale-180.appx
